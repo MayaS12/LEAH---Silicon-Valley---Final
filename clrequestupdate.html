@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./img/Silicon Valley logo - LEAH.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Client Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="/assets/css/demo.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-image="../assets/img/sidebar-7.png">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a href="index.html" style="font-size: 40px;" class="simple-text">
+                      L.E.A.H
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cldashboard.html">
+                            <i class="nc-icon nc-circle-09"></i>
+                            <p>Profile</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/clrequest.html">
+                            <i class="nc-icon nc-notes"></i>
+                            <p>Create Events</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/clmyevents.html">
+                            <i class="nc-icon nc-bullet-list-67"></i>
+                            <p>My events</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/clsearch.html">
+                            <i class="nc-icon nc-zoom-split"></i>
+                            <p>Search Artists</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/clevents.html">
+                            <i class="nc-icon nc-email-85"></i>
+                            <p>Accepted Events</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#pablo">Create Requests</a>
+                    
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html" id="logout">
+                                    <span class="no-icon" >Log out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Create Request</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form id="create-request">
+                                        <div class="row">
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label>Full name</label>
+                                                    <input type="text" class="form-control" id="inputName">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label>Artist type</label>
+                                                    <select class="form-control" id="inputArtistType" required>
+                                                        <option value="Solo singer"> Solo singer </option>
+                                                        <option value="Band"> Band </option>
+                                                        <option value="Duet"> Duet </option>
+                                                        <option value="Non vocal band"> Non-vocal band </option>
+                                                        <option value="Solo instrument player"> Solo instrument player </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label>Genre</label>
+                                                    <select class="form-control" id="inputGenre" required>
+                                                        <option value="rock">Rock</option>
+                                                        <option value="Jazz">Jazz</option>
+                                                        <option value="Classical">Classical</option>
+                                                        <option value="Hip-hop">Hip hop</option>
+                                                        <option value="Pop">Pop</option>
+                                                        <option value="Country">Country</option>
+                                                        <option value="Electronic">Electronic</option>
+                                                        <option value="Dance-music">Dance music</option>
+                                                        <option value="Lounge-music">Lounge music</option>
+                                                        <option value="Popular-hits">Popular hits</option>
+                                                        <option value="Folk">Folk</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label>Instrument</label>
+                                                    <select class="form-control" id="inputInstrument" required>
+                                                        <option value="Voice">Voice</option>
+                                                        <option value="piano">Piano</option>
+                                                        <option value="acoustic-guitar">Acoustic Guitar</option>
+                                                        <option value="Saxophone">Saxophone</option>
+                                                        <option value="Violin">Violin</option>
+                                                        <option value="Electric-guitar">Electric Guitar</option>
+                                                        <option value="Trumpet">Trumpet</option>
+                                                        <option value="Flute">Flute</option>
+                                                        <option value="Clarinet">Clarinet</option>
+                                                        <option value="Bass-guitar">Bass Guitar</option>
+                                                        <option value="Drums">Drums</option>
+                                                        <option value="Harp">Harp</option>
+                                                        <option value="Cello">Cello</option>
+                                                        <option value="Tabla">Tabla</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label>Date of Event</label>
+                                                    <input type="date" class="form-control" id="inputDate">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label>State</label>
+                                                    <select class="form-control" id="inputState" required>
+                                                        <option value="Andhra Pradesh"> Andhra Pradesh </option>
+                                                        <option value="Arunachal Pradesh"> Arunachal Pradesh</option>
+                                                        <option value="Assam"> Assam </option>
+                                                        <option value="Bihar"> Bihar </option>
+                                                        <option value="Chattisgarh"> Chattisgarh </option>
+                                                        <option value="Goa"> Goa </option>
+                                                        <option value="Gujarat"> Gujarat </option>
+                                                        <option value="Haryana"> Haryana </option>
+                                                        <option value="Himachal Pradesh"> Himachal Pradesh</option>
+                                                        <option value="Jharkhand"> Jharkhand </option>
+                                                        <option value="Karnataka">Karnataka</option>
+                                                        <option value="Kerala"> Kerala</option>
+                                                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                        <option value="Maharashtra">Maharashtra</option>
+                                                        <option value="Manipur">Manipur</option>
+                                                        <option value="Meghalaya"> Meghalaya</option>
+                                                        <option value="Mizoram">Mizoram</option>
+                                                        <option value="Nagaland">Nagaland</option>
+                                                        <option value="Odisha">Odisha</option>
+                                                        <option value="Punjab">Punjab</option>
+                                                        <option value="Rajasthan">Rajasthan</option>
+                                                        <option value="Sikkim">Sikkim</option>
+                                                        <option value="Tamil Nadu">Tamil Nadu</option>
+                                                        <option value="Telangana">Telangana</option>
+                                                        <option value="Tripura">Tripura</option>
+                                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                        <option value="Uttarakhand">Uttarakhand</option>
+                                                        <option value="West Bengal">West Bengal</option>
+                                                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                                        <option value="Chandigarh">Chandigarh</option>
+                                                        <option value="Dadra & Nagar Haveli and Daman & Diu">Dadra & Nagar Haveli and Daman & Diu</option>
+                                                        <option value="Delhi">Delhi</option>
+                                                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                                        <option value="Lakshadweep">Lakshadweep</option>
+                                                        <option value="Puducherry">Puducherry</option>
+                                                        <option value="Ladakh">Ladakh</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label>Budget(INR)</label>
+                                                    <select class="form-control" id="inputBudget" required>
+                                                        <option value="5,000-10,000">5,000-10,000</option>
+                                                        <option value="10,000-20,000">10,000-20,000</option>
+                                                        <option value="20,000-50,000">20,000-50,000</option>
+                                                        <option value="50,000-1,00,000">50,000-1,00,000</option>
+                                                        <option value="1,50,000-2,00,000">1,50,000-2,00,000</option>
+                                                        <option value="3,00,000-5,00,000">3,00,000-5,00,000</option>
+                                                        <option value="5,00,000-10,00,000">5,00,000-10,00,000</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" id="create" class="btn btn-info btn-fill pull-right">Update Request</button>
+                                        <div class="clearfix"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!--  Chartist Plugin  -->
+<script src="../assets/js/plugins/chartist.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/js/demo.js"></script>
+
+<!--Firebase connection CDN -->
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+<script>
+
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDxN6hU7kmAJC7VqyCzWYdQWKqY2jh5MDQ",
+  authDomain: "leah---silicon-valley-a1a85.firebaseapp.com",
+  databaseURL: "https://leah---silicon-valley-a1a85-default-rtdb.firebaseio.com",
+  projectId: "leah---silicon-valley-a1a85",
+  storageBucket: "leah---silicon-valley-a1a85.appspot.com",
+  messagingSenderId: "164361881696",
+  appId: "1:164361881696:web:cfa01f7d63e464179a9b05"
+  };
+  firebase.initializeApp(config);
+  
+  // make auth and firestore references
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  // update firestore settings
+  db.settings({ timestampsInSnapshots: true });
+</script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="auth.js"></script>
+
+    <script>
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var j = url.searchParams.get("eventID");
+        console.log(j);
+
+    //     db.collection('requests').doc(j).get().then(querySnapshot=>{
+    //     forEach(doc=>{
+    //         console.log(doc.data());
+    // })
+    // })
+
+var docRef = db.collection("requests").doc(j);
+
+docRef.get().then((doc) => {
+    if (doc.exists) {
+        console.log("Document data:", doc.data());
+        document.getElementById('inputName').value = doc.data().name;
+        document.getElementById('inputArtistType').value = doc.data().artistType;
+        document.getElementById('inputGenre').value = doc.data().genre;
+        document.getElementById('inputInstrument').value = doc.data().instrument;
+        document.getElementById('inputState').value = doc.data().state;
+        document.getElementById('inputBudget').value = doc.data().fee;
+        document.getElementById('inputDate').value = doc.data().date;
+    } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+    }
+}).catch((error) => {
+    console.log("Error getting document:", error);
+});
+
+
+        const createRequest = document.querySelector('#create-request');
+        document.getElementById('create').addEventListener('click', (e)=>{
+        e.preventDefault();
+
+        var uid = auth.currentUser.uid
+        console.log(uid)
+
+        db.collection("requests").doc(j).update({
+            name: document.getElementById('inputName').value,
+          artistType: document.getElementById('inputArtistType').value,
+           genre: document.querySelector('#inputGenre').value,
+           instrument: document.querySelector('#inputInstrument').value,
+           state: document.querySelector('#inputState').value,
+           fee: document.querySelector('#inputBudget').value,
+           date: document.querySelector('#inputDate').value,
+           acceptedArtistStatus: 'false',
+           clientUID: uid
+        })
+        .then(() => {
+            alert('Event updated!')
+            createRequest.reset();  
+        })
+        .catch((error) => {
+            console.error("Error writing document: ", error);
+        });
+      })
+
+    const logout = document.querySelector('#logout');
+
+  logout.addEventListener('click', (e) => {
+    e.preventDefault();
+    auth.signOut().then(()=>{
+        console.log('user logged out');
+
+        window.location.href = 'index.html'
+
+        createRequest.reset();
+    })
+})
+</script>
+
+</html>

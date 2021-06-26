@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <!-- Bootstrap CSS-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> 
+
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LEAH - Home Page</title>
+  </head>
+  <body>
+    <!-- log in form -->
+    <!-- log in button -->
+    <a href="login.html" class="log" style="color:black; margin-left: 1355px; font-size: 25px;">Log in</a>
+    <div class="container"> 
+       <!-- log in button -->
+       <a href="login.html"  style="color:black; margin-bottom: -10px; font-size: 25px;">Log in</a>
+      <div class="forms-container">
+        <div class="logInForm">
+         <!-- signup form for client -->
+         <form  id="client-form" class="log-in-form">
+          <!-- client heading -->
+          <h2 class="title">Sign up as an client</h2>
+          <div class="row">
+           <!-- client email -->
+            <div class="col-lg-6">
+          <div class="input-field">
+            <input type="email" placeholder="Email" id="client-email" required/>
+          </div>
+            </div>
+             <!-- client password -->
+            <div class="col-lg-6">
+          <div class="input-field">
+            <input type="password" placeholder="Password" id="client-password" required/>
+          </div>
+            </div>
+            <!-- client name -->
+            <div class="col-lg-6">
+              <div class="input-field">
+                <input type="text" placeholder="Full name" id="client-name" required>
+              </div>
+            </div>
+            <!-- client state -->
+            <div class="col-lg-6">
+              <div class="input-field">
+                <select name="state" id="client-state" required>
+                  <option value="select">State</option>
+                  <option value="Andhra Pradesh"> Andhra Pradesh </option>
+                  <option value="Arunachal Pradesh"> Arunachal Pradesh</option>
+                  <option value="Assam"> Assam </option>
+                  <option value="Bihar"> Bihar </option>
+                  <option value="Chattisgarh"> Chattisgarh </option>
+                  <option value="Goa"> Goa </option>
+                  <option value="Gujarat"> Gujarat </option>
+                  <option value="Haryana"> Haryana </option>
+                  <option value="Himachal Pradesh"> Himachal Pradesh</option>
+                  <option value="Jharkhand"> Jharkhand </option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Kerala"> Kerala</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Manipur">Manipur</option>
+                  <option value="Meghalaya"> Meghalaya</option>
+                  <option value="Mizoram">Mizoram</option>
+                  <option value="Nagaland">Nagaland</option>
+                  <option value="Odisha">Odisha</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Sikkim">Sikkim</option>
+                  <option value="Tamil-nadu">Tamil Nadu</option>
+                  <option value="Telangana">Telangana</option>
+                  <option value="Tripura">Tripura</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Uttarakhand">Uttarakhand</option>
+                  <option value="West Bengal">West Bengal</option>
+                  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Dadra & Nagar Haveli and Daman & Diu">Dadra & Nagar Haveli and Daman & Diu</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                  <option value="Lakshadweep">Lakshadweep</option>
+                  <option value="Puducherry">Puducherry</option>
+                  <option value="Ladakh">Ladakh</option>
+              </select>
+              </div>
+            </div>
+            <!-- client phone -->
+            <div class="col-lg-6">
+              <div class="input-field">
+                <input placeholder="Phone Number" id="client-phone" type="tel" required>
+              </div>
+            </div>
+          </div>
+          <!-- client button -->
+         <input type="submit" class="btn-login" id="login-btn" value="Sign up"/>
+        </form>
+          <!-- sign up form for artist-->
+          <form  id="artist-form" class="sign-up-form">
+            <!-- artist heading -->
+            <h2 class="title">Sign up as an Artist</h2>
+
+            <div class="row">
+             <!-- artist email -->
+              <div class="col-lg-8">
+            <div class="input-field">
+              <input type="email" placeholder="Email" id="artist-email" required/>
+            </div>
+              </div>
+               <!-- artist password -->
+              <div class="col-lg-4">
+            <div class="input-field">
+              <input type="password" placeholder="Password" id="artist-password" required/>
+            </div>
+              </div>
+              <!-- artist name -->
+              <div class="col-lg-4">
+                <div class="input-field">
+                  <input type="text" placeholder="Full name" id="artist-name" required>
+                </div>
+              </div>
+              <!-- artist type -->
+              <div class="col-lg-4">
+                <div class="input-field">
+                  <select id="artist-type" required>
+                    <option value="Select"> Artist Type</option>
+                    <option value="Solo singer"> Solo singer </option>
+                    <option value="Band"> Band </option>
+                    <option value="Duet"> Duet </option>
+                    <option value="Non vocal band"> Non-vocal band </option>
+                    <option value="Solo instrument player"> Solo instrument player </option>
+                </select>
+                </div>
+              </div>
+              <!-- artist genre -->
+              <div class="col-lg-4">
+                <div class="input-field">
+                  <select id="genre" required>
+                    <option value="Select">Genre</option>
+                    <option value="rock">Rock</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Classical">Classical</option>
+                    <option value="Hip-hop">Hip hop</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Country">Country</option>
+                    <option value="Electronic">Electronic</option>
+                    <option value="Dance-music">Dance music</option>
+                    <option value="Lounge-music">Lounge music</option>
+                    <option value="Popular-hits">Popular hits</option>
+                    <option value="Folk">Folk</option>
+                </select>
+                </div>
+              </div>
+              <!-- artist instrument -->
+              <div class="col-lg-4">
+                <div class="input-field">
+                  <select id="instrument" required>
+                    <option value="Select">Instrument</option>
+                    <option value="Voice">Voice</option>
+                    <option value="piano">Piano</option>
+                    <option value="acoustic-guitar">Acoustic Guitar</option>
+                    <option value="Saxophone">Saxophone</option>
+                    <option value="Violin">Violin</option>
+                    <option value="Electric-guitar">Electric Guitar</option>
+                    <option value="Trumpet">Trumpet</option>
+                    <option value="Flute">Flute</option>
+                    <option value="Clarinet">Clarinet</option>
+                    <option value="Bass-guitar">Bass Guitar</option>
+                    <option value="Drums">Drums</option>
+                    <option value="Harp">Harp</option>
+                    <option value="Cello">Cello</option>
+                    <option value="Tabla">Tabla</option>
+                    <option value="Other">Other</option>
+                </select>
+                </div>
+              </div>
+              <!-- artist sample performance 1 -->
+              <div class="col-lg-8">
+                <div class="input-field">
+                <input type="url" id="link1" placeholder="Link to performances" required>
+                </div>
+              </div>
+              <!-- artist state -->
+              <div class="col-lg-6">
+                <div class="input-field">
+                  <select class="artist-form" name="state" id="artist-state" required>
+                    <option value="select">State</option>
+                    <option value="Andhra Pradesh"> Andhra Pradesh </option>
+                    <option value="Arunachal Pradesh"> Arunachal Pradesh</option>
+                    <option value="Assam"> Assam </option>
+                    <option value="Bihar"> Bihar </option>
+                    <option value="Chattisgarh"> Chattisgarh </option>
+                    <option value="Goa"> Goa </option>
+                    <option value="Gujarat"> Gujarat </option>
+                    <option value="Haryana"> Haryana </option>
+                    <option value="Himachal Pradesh"> Himachal Pradesh</option>
+                    <option value="Jharkhand"> Jharkhand </option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala"> Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya"> Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Dadra & Nagar Haveli and Daman & Diu">Dadra & Nagar Haveli and Daman & Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Ladakh">Ladakh</option>
+                </select>
+                </div>
+              </div>
+              <!-- artist phone -->
+              <div class="col-lg-6">
+                <div class="input-field">
+                  <input placeholder="Phone Number" id="artist-phone" type="tel" required>
+                </div>
+              </div>
+              <!-- artist fee -->
+              <div class="col-lg-6">
+                <div class="input-field">
+                  <select id="artist-fee" required>
+                    <option value="select">Budget(INR)</option>
+                    <option value="5,000-10,000">5,000-10,000</option>
+                    <option value="10,000-20,000">10,000-20,000</option>
+                    <option value="20,000-50,000">20,000-50,000</option>
+                    <option value="50,000-1,00,000">50,000-1,00,000</option>
+                    <option value="1,50,000-2,00,000">1,50,000-2,00,000</option>
+                    <option value="3,00,000-5,00,000">3,00,000-5,00,000</option>
+                    <option value="5,00,000-10,00,000">5,00,000-10,00,000</option>
+                </select>
+                </div>
+              </div>
+            </div>
+            <!--artist signup button -->
+           <input type="submit" class="btn-signup" id="signup-btn" value="Sign up"/>
+          </form>
+         
+          
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+        <img src="img/Silicon Valley logo - LEAH.png" style="margin-left: -500px;" class="image" alt="" />
+          <div class="content">
+              <div class="left-stuff">
+                <h3 style="color: black; margin-top: 20px; margin-left: 50px; font-size: 50px; padding-top: 15px;">L.E.A.H</h3>
+                <h4 style="font-size: 15px; margin-left: 50px; color: black;">
+                  Live Entertainment At Home
+                 </h4>
+                <button class="btn transparent" style="margin-top: 60px; margin-right: -50px;" id="artist-btn">
+                  Sign up as an artist
+                </button>
+              </div>
+          </div>
+        </div>
+        <div class="panel right-panel">
+        <img src="img/Silicon Valley logo - LEAH.png" style="margin-left: -500px;" class="image" id="image2" alt="" />
+          <div class="content">
+              <div class="right-stuff">
+                <h3 style="color: black; margin-top: 20px; margin-left: 50px; font-size: 50px; padding-top: 15px;">L.E.A.H</h3>
+                <h4 style="font-size: 15px; margin-left: 50px; color: black;">
+                 Live Entertainment At Home
+                </h4>
+                <button class="btn transparent" style="margin-top: 60px; margin-right: -50px" id="client-btn">
+                  Sign up as a client
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- jQuery first, then Tether, then Bootstrap JS. -->
+       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
+</script>
+
+            <!--Firebase connection CDN -->
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+  <script>
+
+
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDxN6hU7kmAJC7VqyCzWYdQWKqY2jh5MDQ",
+    authDomain: "leah---silicon-valley-a1a85.firebaseapp.com",
+    databaseURL: "https://leah---silicon-valley-a1a85-default-rtdb.firebaseio.com",
+    projectId: "leah---silicon-valley-a1a85",
+    storageBucket: "leah---silicon-valley-a1a85.appspot.com",
+    messagingSenderId: "164361881696",
+    appId: "1:164361881696:web:cfa01f7d63e464179a9b05"
+    };
+    firebase.initializeApp(config);
+    
+    // make auth and firestore references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    // update firestore settings
+    db.settings({ timestampsInSnapshots: true });
+  </script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="auth.js"></script>
+  <script src="app.js"></script>
+  </body>
+</html>
